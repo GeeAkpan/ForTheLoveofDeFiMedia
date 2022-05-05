@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeGee's Store</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    
+    <a href="#" class="logo">  </i class= "span"> FTL<span><i class="fa fa-heart"></i></span>D </a>
+        
+   
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fa fa-phone" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div id="Container">
+        <label class="switch">
+            <input type="checkbox" onclick="changeMode()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <script>
+        function changeMode(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</header>
+
+<!-- header section ends -->
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+ 
+    <div class="content">
+        <h3>We offer <span>high-quality services,</span> backed by professionalism and experience.</h3>
+        <p>DeFi | Crypto Marketing | Community Management | Community Development | #Web Development | Social Media Managment | Graphics Design | Content Creation | Video Edition</p>
+        <a href="#" class="btn">Contact now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<section>
+    <h1 class="heading"> About <span>Us</span> </h1>
+    <div class="box-container box about-us">
+        <div class="box gridbox1">
+            <div class="text" style="font-size: 1.5rem; padding-left: 20px; margin-top: 50px;"> 
+                For the love of DeFi Community is a community built around sharing knowledge of the trends about Crypto. We are a community driven by our interest in creating traction and mass adoption of the concepts of Decentralized Finance via media publicity and brand marketing.</div>
+            <div class="side-picture">
+                <img src="http://unblast.com/wp-content/uploads/2021/03/Email-Marketing-Illustration.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading">Our <span>Services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/51/bc/64/51bc64351195ea788ea52a2f213ac1b2.jpg" alt="">
+            <h3>Ambassadorial Program</h3>
+            <p>Hosting ambassador programs for new projects with our seasoned and professional ambassador team</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/b3/0c/55/b30c5587506c63fc294c5b019091c7b1.jpg" alt="">
+            <h3>Community Management</h3>
+            <p>Community Management and Community Growth Strategizing for DeFi projects</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="data:image/png;base64,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" alt="">
+            <h3>Hosting live spaces</h3>
+            <p>Hosting Twitter Live space and talk sessions to educate and attract investors to the various platforms that collaborate with us</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/ab/94/af/ab94afad0d4b0ff2340fbc6490c28c3e.jpg" alt="">
+            <h3>Graphic Design</h3>
+            <p>Illustration, Animation, User Experience, Video Production, Logo Design & Branding.</p>
+           
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/0f/26/6b/0f266bbc71efb8b9f91de33f709fd5a7.jpg" alt="">
+            <h3>Digital Marketing</h3>
+            <p>We assist crypto startups gain buyer attention, using crypto SEO, social media marketing and influencer marketing,</p>
+          
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/ca/1e/a8/ca1ea804473ff7c647d772fecc2055a3.jpg" alt="">
+            <h3>Web Development</h3>
+            <p>Hosting Twitter Live space and talk sessions to educate and attract investors to the various platforms that collaborate with us</p>
+        
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://infotrackgo.com.au/wp-content/uploads/2021/09/Person-Search-Header.jpg" alt="">
+                <p>
+                    “Thank you so much for helping out with my project while I've been away. It's such a good feeling to know that we can take time out when needed and the team are here to not just support our customers but support each other too. “</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<!-- <section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>fresh and organic vegitables and fruits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>fresh and organic vegitables and fruits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
+                </div>
+                <h3>fresh and organic vegitables and fruits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> <a href="#" class="logo">  </i class= "span"> FTL<span><i class="fa fa-heart"></i></span>D </a>
+            </h3>
+            <p>Follow our social media handles for updates</p>
+            <div class="share">
+                <a href="https://web.facebook.com/wonder.joseph.961/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/GeeAkpan" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/for_the_love_of_defi/" class="fab fa-instagram"></a>
+                <a href="https://t.me/+nAo66_YIpQo4MzFk" class="fab fa-telegram"></a>
+                <a href="https://www.reddit.com/r/ForTheLoveOfDeFi?utm_medium=android_app&utm_source=share"class= "fab fa-reddit"></a>
+                <a href="https://discord.gg/WAyUJ7NYVY" class="fab fa-discord"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> godswillakp18@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Uyo, Nigeria.</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>Message Us</h3>
+            <input type="text" placeholder="name" class="name">
+            <input type="email" placeholder="your email" class="email">
+            <input type="text" placeholder="subject" class="subject">
+            <input type="text" placeholder="message" class="message">
+           <a href="godswillakp18@gmail.com"></a> <input type="submit" value="Send message" class="btn">
+            
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> GreyAcee </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
